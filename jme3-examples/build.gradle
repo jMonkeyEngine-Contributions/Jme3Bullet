@@ -18,23 +18,23 @@ task run(dependsOn: 'build', type:JavaExec) {
 }
 
 dependencies {
-    compile project(':jme3-core')
-    compile project(':jme3-desktop')
-    compile project(':jme3-effects')
+    compile 'org.jmonkeyengine:jme3-core:3.3.2-stable'
+    compile 'org.jmonkeyengine:jme3-desktop:3.3.2-stable'
+    compile 'org.jmonkeyengine:jme3-effects:3.3.2-stable'
 
     // EITHER use jme3-bullet + jme3-bullet-native OR ELSE jme3-jbullet
     compile project(':jme3-bullet')
     compile project(':jme3-bullet-native')
 //    compile project(':jme3-jbullet')
 
-    compile project(':jme3-jogg')
-    compile project(':jme3-lwjgl')
-//    compile project(':jme3-lwjgl3')
-    compile project(':jme3-networking')
-    compile project(':jme3-niftygui')
-    compile project(':jme3-plugins')
-    compile project(':jme3-terrain')
-    compile project(':jme3-testdata')
+    compile 'org.jmonkeyengine:jme3-jogg:3.3.2-stable'
+    compile 'org.jmonkeyengine:jme3-lwjgl:3.3.2-stable'
+//    compile 'org.jmonkeyengine:jme3-lwjgl3:3.3.2-stable'
+    compile 'org.jmonkeyengine:jme3-networking:3.3.2-stable'
+    compile 'org.jmonkeyengine:jme3-niftygui:3.3.2-stable'
+    compile 'org.jmonkeyengine:jme3-plugins:3.3.2-stable'
+    compile 'org.jmonkeyengine:jme3-terrain:3.3.2-stable'
+    compile 'org.jmonkeyengine:jme3-testdata:3.3.2-stable'
 }
 
 jar.doFirst{

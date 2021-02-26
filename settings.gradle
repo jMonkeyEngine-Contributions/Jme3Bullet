@@ -1,42 +1,15 @@
 /**
  * This is the global settings file used by all subprojects.
  **/
-rootProject.name = 'jmonkeyengine'
+rootProject.name = 'Jme3Bullet'
 
-// Core classes, should work on all java platforms
-include 'jme3-core'
-include 'jme3-effects'
-include 'jme3-networking'
-include 'jme3-plugins'
-include 'jme3-terrain'
-
-// Desktop dependent java classes
-include 'jme3-desktop'
-include 'jme3-lwjgl'
-if (JavaVersion.current().isJava8Compatible()) {
-    include 'jme3-lwjgl3'
-    include 'jme3-vr'
-}
-
-// Other external dependencies
-include 'jme3-jbullet'
-include 'jme3-niftygui'
-include 'jme3-jogg'
-include 'jme3-android'
-include 'jme3-ios'
-
-//native builds
+// library for physics simulation using native Bullet
 include 'jme3-bullet' //java
 include 'jme3-bullet-native' //cpp
 include 'jme3-bullet-native-android' //cpp
-include 'jme3-android-native' //cpp
 
-// Test Data project
-include 'jme3-testdata'
+// library for physics simulation using a version of JBullet
+include 'jme3-jbullet'
 
-// Example projects
+// example applications
 include 'jme3-examples'
-
-if(buildAndroidExamples == "true"){
-    include 'jme3-android-examples'
-}

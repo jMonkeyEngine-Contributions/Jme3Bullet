@@ -15,6 +15,6 @@ dependencies {
     compile 'java3d:vecmath:1.3.1'
     compile 'jbullet:jbullet'
     compile 'stack-alloc:stack-alloc'
-    compile project(':jme3-core')
-    compile project(':jme3-terrain')
+    compile 'org.jmonkeyengine:jme3-core:3.3.2-stable'
+    compile 'org.jmonkeyengine:jme3-terrain:3.3.2-stable'
 }

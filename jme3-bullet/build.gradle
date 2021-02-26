@@ -17,8 +17,8 @@ sourceSets {
 }
 
 dependencies {
-    compile project(':jme3-core')
-    compile project(':jme3-terrain')
+    compile 'org.jmonkeyengine:jme3-core:3.3.2-stable'
+    compile 'org.jmonkeyengine:jme3-terrain:3.3.2-stable'
 }
 
 compileJava {
